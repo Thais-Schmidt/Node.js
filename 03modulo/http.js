@@ -3,10 +3,10 @@
 const http = require('http');
 
 http.createServer(function (req, res) {
-    res.write(`Aprendendo Node.js! AOBA  `);
+    res.write(`Aprendendo Node.js!`);
     // res.end(`Hello World! Welcome to my website!`);
     res.end();
-}).listen(8081);
+}).listen(7000);
 
 // req (recebe)--> quando o servidor recebe uma informação;
 // res (retorna)--> quando vamos responder, exibir algo, uma página html, um texto;
