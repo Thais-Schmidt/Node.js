@@ -1,0 +1,38 @@
+body{
+    background-color: deeppink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+img{
+    width: 250px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    gap: 5px;
+}
+
+.alinhar_em_coluna{
+    flex-direction: column;
+}
+
+.alinhar_texto_centro{
+    text-align: center;
+}
+
+.title{
+    font-size: 40px;
+    text-align: center;
+    user-select: none;
+    color: var(--primary-color);
+}
+
+.row{
+    display: grid;
+    gap: 10px;
+}
