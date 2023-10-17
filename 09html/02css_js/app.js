@@ -13,6 +13,10 @@ app.get(`/`, function (req, res) {
     res.sendFile(`${__dirname}/publico/html/index.html`)
 })
 
+app.use(function (req, res) {
+    res.status(404).sendFile(`${__dirname}/publico/html/404.html`)
+})
+
 app.listen(7000,() => {
     console.log(`Servidor rodando na porta 7000`);
 })

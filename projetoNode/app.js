@@ -27,6 +27,12 @@ app.get(`/cadastro`, function (req,res) {
     res.sendFile(`${__dirname}/publico/html/cadastro.html`)
 })
 
+//Criando rota para pagina de erro 404
+
+app.use(function (req, res) {
+    res.status(404).sendFile(`${__dirname}/publico/html/404.html`)
+})
+
 //Porta 
 
 app.listen(4000, () => {
@@ -34,3 +40,6 @@ app.listen(4000, () => {
 })
 
 //localhost:4000
+
+
+
