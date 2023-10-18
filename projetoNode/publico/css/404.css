@@ -12,8 +12,7 @@ img {
     width: 36%;
     height: auto;
     justify-content: center;
-
-    rotate: calc(345deg)
+    padding-top: 49px;
 }
 
 .dividindo {
@@ -28,39 +27,27 @@ img {
 }
 
 p {
-    font-size: 80px;
+    font-size: 60px;
     color: rgb(253, 210, 110);
 }
 
 #volte {
     font-family: sans-serif;
     font-weight: bolder;
-    font-size: 44px;
+    font-size: 40px;
     color: white;
 }
 
 #text{
     text-align: center;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
 }
 
 a{
-    height: 29px;
-    width: 30px;
-
-    background-color: white;
-    color: black;
-
-    text-decoration: none;
-
-    font-family: sans-serif;
-    font-size: large;
-    font-weight: bold;
-    letter-spacing: 1px;
-
     border: none;
-    border-radius: 30px;
-
-
-    cursor: pointer;
+    text-decoration: underline rgb(253, 210, 110); ;
+    color: rgb(253, 210, 110);;
+    font-family:'Segoe UI';
+    font-weight: bold;
+    font-size: 30px;
 }
