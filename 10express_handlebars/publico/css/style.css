@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Yuji+Syuku&display=swap');
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    background: rgb(238, 174, 202);
+    background: -moz-linear-gradient(0deg, rgba(238, 174, 202, 1) 0%, rgba(160, 153, 229, 1) 27%, rgba(148, 187, 233, 1) 55%);
+    background: -webkit-linear-gradient(0deg, rgba(238, 174, 202, 1) 0%, rgba(160, 153, 229, 1) 27%, rgba(148, 187, 233, 1) 55%);
+    background: linear-gradient(0deg, rgba(238, 174, 202, 1) 0%, rgba(160, 153, 229, 1) 27%, rgba(148, 187, 233, 1) 55%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca", endColorstr="#94bbe9", GradientType=1);
+
+    height: 100vh;
+}
+
+header {
+    background-color: rgba(238, 174, 202, 1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -5px;
+    height: 10vh;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav a{
+    font-size: 20px;
+    margin-left: 20px;
+}
