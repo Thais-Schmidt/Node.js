@@ -7,22 +7,29 @@
     <title>Main</title>
 </head>
 <body>
+
     <header>
+
         <div>
             <h2>T.Schmidt</h2>
         </div>
 
         <nav>
-            <a href="">Home</a>
-            <a href="">About</a>
+            {{>menu}}
         </nav>
+
     </header>
 
-    {{{body}}}
+    <main>
+
+        {{{body}}}
+
+    </main>
 
     <footer>
-        <h3></h3>
+
+        {{>footer}}
+
     </footer>
-    
 </body>
 </html>

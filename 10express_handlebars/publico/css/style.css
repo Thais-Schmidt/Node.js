@@ -4,31 +4,54 @@
     box-sizing: border-box;
 }
 
-* {
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Yuji+Syuku&display=swap');
-}
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
-
     background: rgb(238, 174, 202);
-    background: -moz-linear-gradient(0deg, rgba(238, 174, 202, 1) 0%, rgba(160, 153, 229, 1) 27%, rgba(148, 187, 233, 1) 55%);
-    background: -webkit-linear-gradient(0deg, rgba(238, 174, 202, 1) 0%, rgba(160, 153, 229, 1) 27%, rgba(148, 187, 233, 1) 55%);
-    background: linear-gradient(0deg, rgba(238, 174, 202, 1) 0%, rgba(160, 153, 229, 1) 27%, rgba(148, 187, 233, 1) 55%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca", endColorstr="#94bbe9", GradientType=1);
+    background: -moz-linear-gradient(0deg, rgba(238, 174, 202, 1) 0%, rgba(245, 220, 231, 1) 48%, rgba(250, 250, 250, 1) 78%);
+    background: -webkit-linear-gradient(0deg, rgba(238, 174, 202, 1) 0%, rgba(245, 220, 231, 1) 48%, rgba(250, 250, 250, 1) 78%);
+    background: linear-gradient(0deg, rgba(238, 174, 202, 1) 0%, rgba(245, 220, 231, 1) 48%, rgba(250, 250, 250, 1) 78%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca", endColorstr="#fafafa", GradientType=1);
 
     height: 100vh;
+
+}
+
+footer {
+    background-color: #fafafa;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px -10px 10px -5px;
+
+    display: block;
+
+    height: 10vh;
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 header {
-    background-color: rgba(238, 174, 202, 1);
+    background-color: #fafafa;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -5px;
+
     display: flex;
+
     justify-content: space-around;
     align-items: center;
+
     margin: 0 auto;
     padding: 0 20px;
-    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -5px;
     height: 10vh;
+}
+
+h1{
+    text-align: center;
+    margin: 15% auto 15% auto;
+    font-family: 'Montserrat', sans-serif;
+    color: deeppink;
 }
 
 nav {
@@ -36,7 +59,24 @@ nav {
     text-align: right;
 }
 
-nav a{
+nav a {
+    text-decoration: none;
+
+    font-family: 'Chilanka', cursive;
     font-size: 20px;
+    color: deeppink;
+
     margin-left: 20px;
+}
+
+h2 {
+    color: deeppink;
+    font-family: 'Chilanka', cursive;
+}
+
+p {
+    font-family: 'Chilanka', cursive;
+    color: deeppink;
+    text-align: center;
+    padding-top: 15px;
 }
