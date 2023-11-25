@@ -1,0 +1,92 @@
+<h1>Contato</h1>
+
+<div class="container">
+
+    <div id="bloco_form">
+
+        <form id="form" action="cadastro" method="post">
+
+            <div class="group">
+                <input name="nome" id="nome" type="text" class="input" required="">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="nome">Nome:</label>
+            </div>
+
+            <div class="group">
+                <input name="email" id="email" type="text" class="input" onkeydown="validando()" required="">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <span id="text"></span>
+                <label for="email">E-mail:</label>
+            </div>
+
+            <div class="group">
+                <input name="senha" id="senha" type="password" class="input" required="">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="senha">Senha:</label>
+            </div>
+
+            <input type="submit" value="Cadastrar" id="btn">
+
+        </form>
+
+    </div>
+
+</div>
+
+<script>
+    //Funçao para validar email
+
+    function validando() {
+        var form = document.getElementById("form");
+        var email = document.getElementById("email").value;
+        var text = document.getElementById("text");
+        var pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        if (email.match(pattern)) {
+            form.classList.add("valid");
+            form.classList.remove("invalid");
+            text.innerHTML = "";
+            text.style.color = "#00ff00";
+        }
+        else {
+            form.classList.remove("valid");
+            form.classList.add("invalid");
+            text.innerHTML = "Insira um email valido."
+            text.style.color = "orangered";
+            text.style.fontFamily = "sans-serif";
+            text.style.fontWeight = "bold";
+            text.style.fontSize = "11px";
+        }
+
+        if (email == "") {
+            form.classList.remove("valid");
+            form.classList.remove("invalid");
+            text.innerHTML = "";
+            text.style.color = "#00ff00";
+        }
+    }
+
+    // Funçao para não permitir caracteres especiais ao preencher o nome
+
+    const nomeInput = document.querySelector("#nome");
+
+    nomeInput.addEventListener("keypress", function (e) {
+
+        if (!checandoCaracter(e)) {
+            e.preventDefault();
+        }
+    });
+
+    function checandoCaracter(e) {
+        const caracter = String.fromCharCode(e.keyCode);
+
+        const pattern = '[a-z A-Z]';
+
+        if (caracter.match(pattern)) {
+            return true;
+        }
+    }
+</script>

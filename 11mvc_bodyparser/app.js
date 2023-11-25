@@ -34,8 +34,7 @@ app.get('/about', aboutController.about );
 
 app.get('/contato', contatoController.contato );
 
-
-
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port}.`);
 });
+
