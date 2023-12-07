@@ -1,0 +1,32 @@
+<h1>Pagina Home</h1>
+
+{{#if expressHndBrs}}
+<p>Estou gostando de Express-Handlebars</p>
+{{else}}
+<p>Estou desistindo de Express-Handlebars</p>
+{{/if}}
+
+<br>
+
+<h3>Tabela de pessoas:</h3>
+
+<table>
+    <thead>
+        <tr>
+            <td>Id:</td>
+            <td>Nome:</td>
+            <td>Email:</td>
+            <td>Senha:</td>
+        </tr>
+    </thead>
+
+    {{#each dados}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{nome}}</td>
+            <td>{{email}}</td>
+            <td>{{senha}}</td>
+        </tr>
+    {{/each}}
+
+</table>
